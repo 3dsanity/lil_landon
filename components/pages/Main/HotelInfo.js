@@ -1,3 +1,6 @@
+import services from './data/services.json';
+import accessibilities from './data/accessibilities.json';
+
 const HotelInfo = () => {
   return (
     <div className="scene" id="hotelinfo">
@@ -41,21 +44,9 @@ const HotelInfo = () => {
             your stay comfortable, and your experience one-of-a-kind.
           </p>
           <ul>
-            <li>Indoor pool</li>
-            <li>24-hour fitness center</li>
-            <li>Massage therapy</li>
-            <li>Full service spa</li>
-            <li>In-room jacuzzi tubs</li>
-            <li>Rooftop café &amp; smoothie bar</li>
-            <li>Coffee bar &amp; pastry shop</li>
-            <li>Traditional continental breakfast</li>
-            <li>24-hour concierge service</li>
-            <li>Business center</li>
-            <li>Complimentary wireless service</li>
-            <li>Laundry &amp; dry cleaning service</li>
-            <li>Daily paper</li>
-            <li>Certified &quot;green&quot; hotel</li>
-            <li>Pet-friendly rooms &amp; common areas</li>
+            {services.map((service, i) => (
+              <li key={service + i}>{service}</li>
+            ))}
           </ul>
         </section>
         <section className="checklist" id="accessibility">
@@ -66,19 +57,9 @@ const HotelInfo = () => {
             special needs:
           </p>
           <ul>
-            <li>Grab bars on tub walls</li>
-            <li>Shower chairs</li>
-            <li>Hand held shower sprayers</li>
-            <li>Higher toilets &amp; toilet modifiers</li>
-            <li>Lower sink faucet handles</li>
-            <li>Wheelchair clearance under sinks &amp; vanity</li>
-            <li>Lower racks in closet</li>
-            <li>TDD machines</li>
-            <li>Telephone light signalers &amp; smoke alarms</li>
-            <li>Telephone amplification handsets</li>
-            <li>Closed captioned television converters</li>
-            <li>Vibrating alarm clocks</li>
-            <li>Telephones with volume control</li>
+            {accessibilities.map((accessibility, i) => (
+              <li key={accessibility + i}>{accessibility}</li>
+            ))}
           </ul>
         </section>
       </article>
