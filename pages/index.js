@@ -1,60 +1,6 @@
 export default function Home() {
   return (
     <>
-      <header id="intro">
-        <article className="fullheight">
-          <div className="hgroup">
-            <h1>Landon Hotel</h1>
-            <h2>West London</h2>
-            <p>
-              <a href="#welcome">
-                <img
-                  src="https://landonhotel.com/images/misc/arrow.png"
-                  alt="down arrow"
-                />
-              </a>
-            </p>
-          </div>
-        </article>
-
-        <nav id="nav">
-          <div className="navbar">
-            <div className="brand">
-              <a href="#welcome">
-                Landon <span>Hotel</span>
-              </a>
-            </div>
-            <ul>
-              <li>
-                <a className="icon info" href="#hotelinfo">
-                  <span>info</span>
-                </a>
-              </li>
-              <li>
-                <a className="icon rooms" href="#rooms">
-                  <span>rooms</span>
-                </a>
-              </li>
-              <li>
-                <a className="icon dining" href="#dining">
-                  <span>dining</span>
-                </a>
-              </li>
-              <li>
-                <a className="icon events" href="#events">
-                  <span>events</span>
-                </a>
-              </li>
-              <li>
-                <a className="icon attractions" href="#attractions">
-                  <span>attractions</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
       <main id="wrapper">
         <div className="scene" id="welcome">
           <article className="content">
@@ -195,41 +141,6 @@ export default function Home() {
           </article>
         </div>
       </main>
-      <footer className="scene">
-        <article className="content">
-          <div id="socialmedia">
-            <ul className="group">
-              <li>
-                <a href="https://twitter.com">
-                  <img
-                    className="icon"
-                    src="https://landonhotel.com/images/socialmedia/twitter.png"
-                    alt="icon for twitter"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="http://www.facebook.com">
-                  <img
-                    className="icon"
-                    src="https://landonhotel.com/images/socialmedia/facebook.png"
-                    alt="icon for facebook"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="http://www.youtube.com">
-                  <img
-                    className="icon"
-                    src="https://landonhotel.com/images/socialmedia/youtube.png"
-                    alt="icon for youtube"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </footer>
     </>
   );
 }
