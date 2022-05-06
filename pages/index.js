@@ -104,9 +104,9 @@ export default function Home() {
             <section className="checklist" id="accessibility">
               <h2>Accessibility</h2>
               <p>
-                We're committed to maintaining the same quality of service for
-                every individual. We offer the following facilities for those
-                with special needs:
+                W&apos;re committed to maintaining the same quality of service
+                for every individual. We offer the following facilities for
+                those with special needs:
               </p>
               <ul>
                 <li>Grab bars on tub walls</li>
