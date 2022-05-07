@@ -1,10 +1,10 @@
 import HotelInfo from './HotelInfo';
 import Welcome from './Welcome';
 
-const Main = () => {
+const Main = (props) => {
   return (
     <main id="wrapper">
-      <Welcome />
+      <Welcome {...props} />
 
       <HotelInfo />
     </main>

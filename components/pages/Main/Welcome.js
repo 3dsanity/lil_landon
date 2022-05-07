@@ -1,13 +1,15 @@
 import galleryImages from './data/gallery.json';
 
-const Welcome = () => {
+const Welcome = ({ galleryImages }) => {
+  console.log({ galleryImages });
+
   return (
     <div className="scene" id="welcome">
       <article className="content">
         <div className="gallery">
           {galleryImages.map((image, i) => (
             // eslint-disable-next-line jsx-a11y/alt-text
-            <img key={image.src + i} {...image} />
+            <img key={image.fields.src + i} {...image.fields} />
           ))}
         </div>
         <h1>Welcome to the Landon&nbsp;Hotel</h1>

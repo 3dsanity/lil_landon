@@ -1,10 +1,27 @@
 import Main from '../components/pages/Main';
+import { fetchEntries } from '../utils/contentfulPage';
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
-      <Main />
+      <Main {...props} />
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const entries = await fetchEntries();
+
+  let galleryImages = entries.filter(() => true);
+
+  const fields = galleryImages.map((item) => item.fields);
+
+  return galleryImages && fields
+    ? {
+        props: { galleryImages, fields },
+      }
+    : {
+        props: {},
+      };
 }
 
