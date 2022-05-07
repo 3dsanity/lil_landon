@@ -9,7 +9,7 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const entries = await fetchEntries();
 
   let galleryImages = entries.filter(() => true);

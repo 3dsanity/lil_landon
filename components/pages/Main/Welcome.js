@@ -1,8 +1,6 @@
 import galleryImages from './data/gallery.json';
 
 const Welcome = ({ galleryImages }) => {
-  console.log({ galleryImages });
-
   return (
     <div className="scene" id="welcome">
       <article className="content">
